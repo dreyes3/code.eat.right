@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssEtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     entry: ["./src/js/index.js"],
@@ -13,12 +14,17 @@ module.exports = {
         contentBase: "./dist",
     },
     optimization: {
-        minimizer: [new OptimizeCssAssetsPlugin()]
+        minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()]
     },
     plugins: [
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
+            minify: {
+                remoteAttributeQuotes: true,
+                collapseWhitespace: true,
+                removeComments: true
+            }
         }),
         new MiniCssEtractPlugin({
             filename: "[name].[contentHash].css"
