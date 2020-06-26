@@ -1,0 +1,35 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": "3",
+                "targets": {
+                    "browsers": [
+                        "last 5 versions",
+                        "ie >= 8"
+                    ]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "prismjs",
+            {
+                "languages": [
+                    "javascript",
+                    "css",
+                    "html"
+                ],
+                "plugins": [
+                    "line-numbers",
+                    "show-language"
+                ],
+                "theme": "okaidia",
+                "css": true
+            }
+        ]
+    ]
+}

@@ -1,0 +1,113 @@
+/* -------------------------------------------------------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #ffff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* -------------------------------------------------------------------------------------- */
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------------------------------------- */
+header {
+  /* height: 100vh; */
+  background-attachment: fixed;
+  border: 1px solid #555;
+  padding: 0 0 30px 0; 
+  background-color: #555;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+  
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 6px 0;
+  text-decoration: none;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s;
+  color: #ffff;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+.row-nav p{
+  margin-top: 55px;
+  float: left;
+  color: #ffff;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* MAIN ARTICLE */
+/* -------------------------------------------------------------------------------------- */
+.main-article {
+  width: 70%;
+  border-right: 1px solid #555;
+  float: left;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+.main-article p, h2 {
+  padding: 10px 10px;
+}
+
+.main-article pre {
+  border: 0;
+  padding: 0;
+}
+
+.news-feed {  
+  width: 30%;
+  float: left;
+}
+
+.news-feed p, h2 {
+  padding: 20px 10px;
+}
