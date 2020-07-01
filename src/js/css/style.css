@@ -86,7 +86,7 @@ header {
 /* -------------------------------------------------------------------------------------- */
 .main-article {
   width: 70%;
-  border-right: 1px solid #555;
+  /* border-right: 1px solid #555; */
   float: left;
 }
 
@@ -94,20 +94,50 @@ h2 {
   font-size: 200%;
 }
 
-.main-article p, h2 {
+/* .main-article p, h2 {
   padding: 10px 10px;
-}
+} */
 
-.main-article pre {
+/* .main-article pre {
   border: 0;
   padding: 0;
 }
+ */
+
+#editor-container {
+  height: 375px;
+}
+
+pre.ql-syntax {
+  background-color: #23241f;
+  color: #f8f8f2;
+  overflow: visible;
+  padding: 10px 10px;
+}
+
+blockquote {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0.75rem 1rem;
+  border-left: 5px solid rgb(229, 229, 229);
+}
+
+.article-preview p{
+  line-height: 200%;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* NEWS FEED */
+/* -------------------------------------------------------------------------------------- */
+
 
 .news-feed {  
-  width: 30%;
   float: left;
+  width: 20%;
 }
 
 .news-feed p, h2 {
   padding: 20px 10px;
 }
+
